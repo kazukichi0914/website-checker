@@ -1,0 +1,147 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  width: 340px;
+  margin: 0;
+  padding: 12px;
+  font-family: -apple-system, "Segoe UI", "Hiragino Sans", "Yu Gothic", sans-serif;
+  font-size: 13px;
+  color: #202124;
+}
+
+header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 10px;
+}
+
+h1 {
+  font-size: 15px;
+  margin: 0;
+}
+
+#checkNowBtn {
+  font-size: 12px;
+  padding: 4px 8px;
+  cursor: pointer;
+  border: 1px solid #dadce0;
+  background: #f8f9fa;
+  border-radius: 4px;
+}
+
+#checkNowBtn:disabled {
+  opacity: 0.6;
+  cursor: default;
+}
+
+#addForm {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  margin-bottom: 8px;
+}
+
+#addForm input {
+  padding: 6px 8px;
+  border: 1px solid #dadce0;
+  border-radius: 4px;
+  font-size: 13px;
+}
+
+#addForm button {
+  align-self: flex-end;
+  padding: 5px 12px;
+  border: none;
+  background: #1a73e8;
+  color: #fff;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.status {
+  min-height: 16px;
+  margin: 0 0 6px;
+  font-size: 12px;
+  color: #5f6368;
+}
+
+#siteList {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  max-height: 320px;
+  overflow-y: auto;
+}
+
+#siteList li {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 8px 4px;
+  border-bottom: 1px solid #eee;
+}
+
+#siteList li.has-update {
+  background: #fef7e0;
+}
+
+.site-info {
+  flex: 1;
+  min-width: 0;
+  cursor: pointer;
+}
+
+.site-title {
+  font-weight: 600;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.site-url {
+  font-size: 11px;
+  color: #5f6368;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.site-meta {
+  font-size: 11px;
+  color: #5f6368;
+}
+
+.site-meta.error {
+  color: #d93025;
+}
+
+.update-dot {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: #ea4335;
+  flex-shrink: 0;
+}
+
+.remove-btn {
+  border: none;
+  background: none;
+  color: #5f6368;
+  cursor: pointer;
+  font-size: 16px;
+  line-height: 1;
+  padding: 4px;
+}
+
+.remove-btn:hover {
+  color: #d93025;
+}
+
+.empty {
+  text-align: center;
+  color: #5f6368;
+  padding: 16px 0;
+}
